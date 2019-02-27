@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>c_plus_plus</name>
+	<name>ft-cpp</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -30,4 +30,26 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 		<nature>org.eclipse.cdt.autotools.core.autotoolsNatureV2</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>code</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>ft</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>ft/inc</name>
+			<type>2</type>
+			<locationURI>PARENT-1-PROJECT_LOC/inc</locationURI>
+		</link>
+		<link>
+			<name>ft/src</name>
+			<type>2</type>
+			<locationURI>PARENT-1-PROJECT_LOC/src</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
