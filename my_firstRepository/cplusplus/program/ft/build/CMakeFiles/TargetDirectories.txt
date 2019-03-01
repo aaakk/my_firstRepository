@@ -1,0 +1,3 @@
+/home/liangyj/code/my_firstRepository/my_firstRepository/cplusplus/program/ft/build/CMakeFiles/rebuild_cache.dir
+/home/liangyj/code/my_firstRepository/my_firstRepository/cplusplus/program/ft/build/CMakeFiles/cppliang.dir
+/home/liangyj/code/my_firstRepository/my_firstRepository/cplusplus/program/ft/build/CMakeFiles/edit_cache.dir

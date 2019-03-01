@@ -9,6 +9,6 @@ fi
 
 cd build
 
-cmake  -G"MSYS Makefiles" ..
+cmake ..
 
 make
