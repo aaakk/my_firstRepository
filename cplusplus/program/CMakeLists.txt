@@ -1,28 +1,28 @@
-#È·¶¨cmake°æ±¾
+#ç¡®å®šcmakeç‰ˆæœ¬
 cmake_minimum_required(VERSION 3.0)
 
-#ÉèÖÃ»·¾³±äÁ¿
-SET(current_dir  ${CMAKE_CURRENT_SOURCE_DIR})
+#è®¾ç½®ç¯å¢ƒå˜é‡
+SET(current_dir  ${CMAKE_CURRENT_SOURCE_DIR})   #å½“å‰CMakeLists.txtæ‰€åœ¨æ–‡ä»¶å¤¹
 SET(code_dir     ${current_dir}/code)
 SET(ft_dir       ${current_dir}/ft)
 
 
-#ÏîÄ¿Ãû³Æ
+#é¡¹ç›®åç§°
 PROJECT(cppliang)
 
-#Í·ÎÄ¼şÂ·¾¶
+#å¤´æ–‡ä»¶è·¯å¾„
 INCLUDE_DIRECTORIES(
     "${code_dir}/inc"
     "${ft_dir}/inc"
 )
 
-#Ô´ÎÄ¼şÂ·¾¶
+#æºæ–‡ä»¶è·¯å¾„
 FILE(GLOB SRC_LIST 
     "${ft_dir}/src/*.cpp"
 )
 
-#6.Éú³É¿ÉÖ´ĞĞÎÄ¼ş
+#6.ç”Ÿæˆå¯æ‰§è¡Œæ–‡ä»¶
 ADD_EXECUTABLE(cppliang ${SRC_LIST})
 
-#7.Á´½Ó¿âÎÄ¼ş
+#7.é“¾æ¥åº“æ–‡ä»¶
 #TARGET_LINK_LIBRARIES(${PROJECT_NAME} m)
