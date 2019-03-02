@@ -1,26 +1,28 @@
-#1.cmake verson
+#确定cmake版本
 cmake_minimum_required(VERSION 3.0)
 
-#2.set environment variable
+#设置环境变量
 SET(current_dir  ${CMAKE_CURRENT_SOURCE_DIR})
 SET(code_dir     ${current_dir}/../code)
 SET(ft_dir       ${current_dir})
 
 
-#3.project name
+#项目名称
 PROJECT(cppliang)
 
-#4.head file path
+#头文件路径
 #INCLUDE_DIRECTORIES(
 #    "${code_dir}/inc"
-#  "${ft_dir}/inc"
+#    "${ft_dir}/inc"
 #)
 
-#5.source directory
-FILE(GLOB SRC_LIST "${ft_dir}/src/*.cpp")
+#源文件路径
+FILE(GLOB SRC_LIST 
+    "${ft_dir}/src/*.cpp"
+)
 
-#6.add executable file
+#6.生成可执行文件
 ADD_EXECUTABLE(cppliang ${SRC_LIST})
 
-#7.add link library
+#7.链接库文件
 #TARGET_LINK_LIBRARIES(${PROJECT_NAME} m)
