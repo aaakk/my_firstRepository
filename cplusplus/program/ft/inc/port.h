@@ -8,11 +8,11 @@
 #ifndef FT_INC_PORT_H_
 #define FT_INC_PORT_H_
 
-#define FT_LIANG_BEG namespace liang{
+#define FT_LIANG_BEG namespace ft_liang{
 #define FT_LIANG_END }
 
-#define USING_LIANG  using namespace liang;
+#define USING_FT_LIANG  using namespace ft_liang;
 
-#define FT_LIANG(name) liang::name
+#define FT_LIANG(name) ft_liang::name
 
 #endif /* FT_INC_PORT_H_ */
