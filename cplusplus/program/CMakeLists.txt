@@ -3,18 +3,18 @@ cmake_minimum_required(VERSION 3.0)
 
 #设置环境变量
 SET(current_dir  ${CMAKE_CURRENT_SOURCE_DIR})
-SET(code_dir     ${current_dir}/../code)
-SET(ft_dir       ${current_dir})
+SET(code_dir     ${current_dir}/code)
+SET(ft_dir       ${current_dir}/ft)
 
 
 #项目名称
 PROJECT(cppliang)
 
 #头文件路径
-#INCLUDE_DIRECTORIES(
-#    "${code_dir}/inc"
-#    "${ft_dir}/inc"
-#)
+INCLUDE_DIRECTORIES(
+    "${code_dir}/inc"
+    "${ft_dir}/inc"
+)
 
 #源文件路径
 FILE(GLOB SRC_LIST 
