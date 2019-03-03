@@ -1,9 +1,11 @@
 /*
  * singleton.h
  *
- *  Created on: 2018Äê9ÔÂ26ÈÕ
+ *  Created on: 2018ï¿½ï¿½9ï¿½ï¿½26ï¿½ï¿½
  *      Author: liangyj
- */
+*/
+
+//å•ä¾‹æ¨¡å¼
 
 #ifndef CODE_INC_SINGLETON_H_
 #define CODE_INC_SINGLETON_H_

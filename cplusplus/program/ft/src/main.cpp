@@ -1,17 +1,28 @@
 /*
  * main.cpp
  *
- *  Created on: 2019Äê2ÔÂ28ÈÕ
+ *  Created on: 2019ï¿½ï¿½2ï¿½ï¿½28ï¿½ï¿½
  *      Author: liangyj
  */
 
 #include <iostream>
 #include "port.h"
+#include "TestArray.h"
 
 
 int main()
 {
-	std::cout << "Hello World!!!" << std::endl;
+    std::cout << "Hello World!!!" << std::endl;
+    FT_LIANG(TestArray) aa;
+    for(int i = 0; i < 3; i++)
+    {
+        printf("%d, ", aa.a[i]);
+    }
+    for(int i = 0; i < 3; i++)
+    {
+            printf("%u, ", aa.a[i]);
+    }
+
 	return 0;
 }
 
