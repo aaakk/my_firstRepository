@@ -18,10 +18,16 @@ int main()
     {
         printf("%d, ", aa.a[i]);
     }
+    ENTER_LINE
     for(int i = 0; i < 3; i++)
     {
             printf("%u, ", aa.a[i]);
     }
+    ENTER_LINE
+    FT_LIANG(NullPointerA)* a =nullptr;
+    a->Func1();
+    a->Func2();
+
 
 	return 0;
 }

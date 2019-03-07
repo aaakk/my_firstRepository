@@ -1,7 +1,7 @@
 /*
  * port.h
  *
- *  Created on: 2019Äê2ÔÂ28ÈÕ
+ *  Created on: 2019ï¿½ï¿½2ï¿½ï¿½28ï¿½ï¿½
  *      Author: liangyj
  */
 
@@ -14,5 +14,7 @@
 #define USING_FT_LIANG  using namespace ft_liang;
 
 #define FT_LIANG(name) ft_liang::name
+
+#define ENTER_LINE printf("\n");
 
 #endif /* FT_INC_PORT_H_ */

@@ -22,6 +22,13 @@ public:
 
 };
 
+class NullPointerA
+{
+public:
+    void Func1();
+    void Func2();
+};
+
 FT_LIANG_END
 
 #endif /* FT_INC_TESTARRAY_H_ */
