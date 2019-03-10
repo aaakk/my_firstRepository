@@ -24,9 +24,14 @@ int main()
             printf("%u, ", aa.a[i]);
     }
     ENTER_LINE
-    FT_LIANG(NullPointerA)* a =nullptr;
+    FT_LIANG(NullPointerA)* a = nullptr;
     a->Func1();
     a->Func2();
+//    std::cout << a->a << std::endl;  //运行无法通过这一段代码;
+    FT_LIANG(NullPointerA)* b = new FT_LIANG(NullPointerA);
+    b->Func1();
+    b->Func2();
+    std::cout << b->a << std::endl;
 
 
 	return 0;

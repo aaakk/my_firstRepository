@@ -27,6 +27,7 @@ class NullPointerA
 public:
     void Func1();
     void Func2();
+    int a{10};
 };
 
 FT_LIANG_END
