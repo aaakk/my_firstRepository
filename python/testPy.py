@@ -3,7 +3,7 @@ while(True):
         M=input()
         M=list(M)
         n=len(M)
-        i=n-1
+        i=n1
         while(i>0 or i==0):
             loc=-1
             for j in range(i+1):
