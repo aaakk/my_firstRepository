@@ -1,10 +1,3 @@
-/*
- * singleton.h
- *
- *  Created on: 2018��9��26��
- *      Author: liangyj
-*/
-
 //单例模式
 
 #ifndef CODE_INC_SINGLETON_H_
