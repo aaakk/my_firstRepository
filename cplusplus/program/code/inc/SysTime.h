@@ -13,16 +13,17 @@ public:
 
     void reset();
     void record();
-    void print();
+    void printRecordTime();
+    void printCurrentTime();
 
 private:
-    int year;
-    int month;
-    int day;
-    int hour;
-    int minute;
-    int second;
-    int msecond;
+    int year{0};
+    int month{0};
+    int day{0};
+    int hour{0};
+    int minute{0};
+    int second{0};
+//    int msecond{0};
 };
 
 NS_LIANG_END

@@ -8,6 +8,7 @@
 #include <iostream>
 #include "port.h"
 #include "TestArray.h"
+#include "SysTime.h"
 
 
 int main()
@@ -32,6 +33,9 @@ int main()
     b->Func1();
     b->Func2();
     std::cout << b->a << std::endl;
+
+    NS_LIANG(SysTime) t;
+    t.printCurrentTime();
 
 
 	return 0;
