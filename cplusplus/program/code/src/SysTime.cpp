@@ -7,6 +7,7 @@
 
 #include <time.h>
 #include <iostream>
+#include <iomanip>
 #include "SysTime.h"
 
 NS_LIANG_BEG
@@ -29,17 +30,18 @@ void SysTime::record()
     hour   = sysTime->tm_hour;
     minute = sysTime->tm_min;
     second = sysTime->tm_sec;
+
+    timeval msecStamp;
+    mingw_gettimeofday(&msecStamp, nullptr);
+    msecond = msecStamp.tv_sec / 1000 % 1000;
+    usecond = msecStamp.tv_usec % 1000;
 }
 
 void SysTime::printRecordTime()
 {
-    std::cout << year << "-" << month << "-" << day << " " << hour << ":" << minute << ":" << second << std::endl;
-}
-
-void SysTime::printCurrentTime()
-{
-    record();
-    printRecordTime();
+    std::cout << year << "-" << std::setfill('0') << std::setw(2) << month << "-" << day <<" " \
+            << hour << ":" << minute << ":" << std::setw(2) << second << ":" << \
+            std::setw(3) << msecond << usecond << std::endl;
 }
 
 void SysTime::reset()
@@ -50,7 +52,14 @@ void SysTime::reset()
     hour    = 0;
     minute  = 0;
     second  = 0;
+    msecond = 0;
 }
 
+void SysTime::printCurrentTime()
+{
+    record();
+    printRecordTime();
+    reset();
+}
 
 NS_LIANG_END

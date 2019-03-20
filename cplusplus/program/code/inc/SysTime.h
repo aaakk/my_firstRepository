@@ -23,7 +23,8 @@ private:
     int hour{0};
     int minute{0};
     int second{0};
-//    int msecond{0};
+    int msecond{0};
+    int usecond{0};
 };
 
 NS_LIANG_END
