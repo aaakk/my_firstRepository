@@ -5,7 +5,7 @@
  *      Author: liangyj
  */
 
-#include <time.h>
+#include <sys/time.h>
 #include <iostream>
 #include <iomanip>
 #include "SysTime.h"
@@ -32,7 +32,7 @@ void SysTime::record()
     second = sysTime->tm_sec;
 
     timeval msecStamp;
-    mingw_gettimeofday(&msecStamp, nullptr);
+    gettimeofday(&msecStamp, nullptr);
     msecond = msecStamp.tv_sec / 1000 % 1000;
     usecond = msecStamp.tv_usec % 1000;
 }
