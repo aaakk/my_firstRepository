@@ -1,7 +1,7 @@
 /*
  * singleton.cpp
  *
- *  Created on: 2018Äê9ÔÂ26ÈÕ
+ *  Created on: 2018ï¿½ï¿½9ï¿½ï¿½26ï¿½ï¿½
  *      Author: liangyj
  */
 
@@ -15,6 +15,7 @@ Singleton::Singleton()
 }
 
 Singleton* Singleton::instance = new Singleton();
+
 Singleton* Singleton::getInstance()
 {
 	return instance;

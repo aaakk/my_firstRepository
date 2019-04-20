@@ -17,7 +17,8 @@ INCLUDE_DIRECTORIES(
 )
 
 #源文件路径
-FILE(GLOB SRC_LIST 
+FILE(GLOB SRC_LIST
+    "${code_dir}/src/*.cpp" 
     "${ft_dir}/src/*.cpp"
 )
 
