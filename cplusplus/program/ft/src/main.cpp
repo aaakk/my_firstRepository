@@ -6,10 +6,11 @@
  */
 
 #include <iostream>
-#include "port.h"
+#include "base.h"
 #include "TestArray.h"
 #include "SysTime.h"
 
+USING_NS_LIANG
 
 int main()
 {

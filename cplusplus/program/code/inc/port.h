@@ -8,7 +8,6 @@
 #ifndef CODE_INC_PORT_H_
 #define CODE_INC_PORT_H_
 
-#include "Base.h"
 
 //定义命名空间
 #define NS_LIANG_BEG namespace liang{
