@@ -20,7 +20,7 @@ TestArray::~TestArray()
 
 void NullPointerA::Func1()
 {
-   std::cout << "Run Func1!!" << std::endl;
+   std::cout << "1" ;
 }
 
 void NullPointerA::Func2()

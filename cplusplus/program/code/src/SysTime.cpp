@@ -39,9 +39,9 @@ void SysTime::record()
 
 void SysTime::printRecordTime()
 {
-    std::cout << year << "-" << std::setfill('0') << std::setw(2) << month << "-" << day <<" " \
-            << hour << ":" << minute << ":" << std::setw(2) << second << ":" << \
-            std::setw(3) << msecond << usecond << std::endl;
+    std::cout << year << "-" << std::setfill('0') << std::setw(2) << month << "-" << std::setw(2) << day <<" " \
+            << std::setw(2) << hour << ":" << std::setw(2) << minute << ":" << std::setw(2) << second << ":" << \
+            std::setw(3) << msecond << std::setw(3) << usecond << std::endl;
 }
 
 void SysTime::reset()

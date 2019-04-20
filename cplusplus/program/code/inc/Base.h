@@ -22,6 +22,34 @@ typedef    uint16_t   U16;
 //typedef    uint32_t   U32;
 typedef    uint64_t   U64;
 
+template<typename T>
+class IsBaseType
+{
+public:
+    static bool isBaseType(){return YES;}
+private:
+    static enum {YES = 0, NO = 1};
+};
+
+#define IS_BASE_TYPE(type) template<>       \
+class IsBaseType<type>                      \
+{                                           \
+public:                                     \
+    static bool isBaseType(){return YES;}    \
+private:                                    \
+    static enum {YES = 1, NO = 0};          \
+};
+
+IS_BASE_TYPE(U8)
+IS_BASE_TYPE(S8)
+IS_BASE_TYPE(U16)
+IS_BASE_TYPE(S16)
+//IS_BASE_TYPE(U32)
+//IS_BASE_TYPE(S32)
+IS_BASE_TYPE(U64)
+IS_BASE_TYPE(S64)
+
+
 
 
 
