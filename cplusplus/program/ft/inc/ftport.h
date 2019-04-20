@@ -5,8 +5,8 @@
  *      Author: liangyj
  */
 
-#ifndef FT_INC_PORT_H_
-#define FT_INC_PORT_H_
+#ifndef FT_INC_FTPORT_H_
+#define FT_INC_FTPORT_H_
 
 #define FT_LIANG_BEG namespace ft_liang{
 #define FT_LIANG_END }
@@ -17,4 +17,4 @@
 
 #define ENTER_LINE printf("\n");
 
-#endif /* FT_INC_PORT_H_ */
+#endif /* FT_INC_FTPORT_H_ */

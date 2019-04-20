@@ -5,8 +5,8 @@
  *      Author: liangyj
  */
 
-#ifndef CODE_INC_PORT_H_
-#define CODE_INC_PORT_H_
+#ifndef CODE_INC_NSPORT_H_
+#define CODE_INC_NSPORT_H_
 
 
 //定义命名空间
@@ -22,4 +22,4 @@
 	ClassName(const ClassName&) = delete;  \
 	ClassName & operator =(const ClassName &) = delete
 
-#endif /* CODE_INC_PORT_H_ */
+#endif /* CODE_INC_NSPORT_H_ */

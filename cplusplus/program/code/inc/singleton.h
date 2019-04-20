@@ -3,7 +3,7 @@
 #ifndef CODE_INC_SINGLETON_H_
 #define CODE_INC_SINGLETON_H_
 
-#include "port.h"
+#include <nsport.h>
 
 NS_LIANG_BEG
 

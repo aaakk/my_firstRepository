@@ -1,14 +1,14 @@
 /*
  * role.h
  *
- *  Created on: 2018Äê10ÔÂ24ÈÕ
+ *  Created on: 2018ï¿½ï¿½10ï¿½ï¿½24ï¿½ï¿½
  *      Author: liangyj
  */
 
 #ifndef INCLUDE_ROLE_H_
 #define INCLUDE_ROLE_H_
 
-#include "port.h"
+#include <nsport.h>
 
 NS_LIANG_BEG
 

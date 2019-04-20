@@ -8,7 +8,7 @@
 #ifndef FT_INC_TESTARRAY_H_
 #define FT_INC_TESTARRAY_H_
 
-#include "port.h"
+#include <ftport.h>
 
 FT_LIANG_BEG
 

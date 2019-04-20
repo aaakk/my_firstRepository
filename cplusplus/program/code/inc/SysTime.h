@@ -1,7 +1,7 @@
 #ifndef CODE_INC_SYSTIME_H_
 #define CODE_INC_SYSTIME_H_
 
-#include "port.h"
+#include <nsport.h>
 
 NS_LIANG_BEG
 
