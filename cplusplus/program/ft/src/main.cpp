@@ -46,7 +46,7 @@ int main()
     {
         std::cout << "Is baseType" << std::endl;
     }
-    if(IsBaseType<float>::isBaseType())
+    if(!IsBaseType<float>::isBaseType())
     {
         std::cout << "Is baseType" << std::endl;
     }
