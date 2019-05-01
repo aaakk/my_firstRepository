@@ -12,3 +12,5 @@ cd build
 cmake ..
 
 make
+
+./cppliang
