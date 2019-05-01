@@ -10,15 +10,10 @@ SET(ft_dir       ${current_dir}/ft)
 #项目名称
 PROJECT(cppliang)
 
-SET(source      ${ft_dir}/inc/gtest/)
-SET(headers     ${ft_dir}/src/gtest/)
-
-ADD_LIBRARY(gtest ${source} ${headers})
-
 #头文件路径
 INCLUDE_DIRECTORIES(
     "${code_dir}/inc"
-    "${ft_dir}/inc/*.h"
+    "${ft_dir}/inc"
 )
 
 #源文件路径
@@ -26,6 +21,11 @@ FILE(GLOB SRC_LIST
     "${code_dir}/src/*.cpp" 
     "${ft_dir}/src/*.cpp"
 )
+
+SET(source      ${ft_dir}/inc/gtest/)
+SET(headers     ${ft_dir}/src/gtest/*.cc)
+
+ADD_LIBRARY(gtest ${source} ${headers})
 
 #6.生成可执行文件
 ADD_EXECUTABLE(cppliang ${SRC_LIST})
