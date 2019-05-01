@@ -20,12 +20,15 @@ INCLUDE_DIRECTORIES(
 FILE(GLOB SRC_LIST
     "${code_dir}/src/*.cpp" 
     "${ft_dir}/src/*.cpp"
+    "${ft_dir}/src/unittest/*.cpp"
 )
 
 SET(source      ${ft_dir}/inc/gtest/)
-SET(headers     ${ft_dir}/src/gtest/*.cc)
+SET(headers     ${ft_dir}/src/gtest/)
 
 ADD_LIBRARY(gtest ${source} ${headers})
+
+SET_TARGET_PROPERTIES(gtest PROPERTIES LINKER_LANGUAGE C)
 
 #6.生成可执行文件
 ADD_EXECUTABLE(cppliang ${SRC_LIST})
