@@ -10,10 +10,15 @@ SET(ft_dir       ${current_dir}/ft)
 #项目名称
 PROJECT(cppliang)
 
+SET(source      ${ft_dir}/inc/gtest/)
+SET(headers     ${ft_dir}/src/gtest/)
+
+ADD_LIBRARY(gtest ${source} ${headers})
+
 #头文件路径
 INCLUDE_DIRECTORIES(
     "${code_dir}/inc"
-    "${ft_dir}/inc"
+    "${ft_dir}/inc/*.h"
 )
 
 #源文件路径
@@ -26,4 +31,4 @@ FILE(GLOB SRC_LIST
 ADD_EXECUTABLE(cppliang ${SRC_LIST})
 
 #7.链接库文件
-#TARGET_LINK_LIBRARIES(${PROJECT_NAME} m)
+TARGET_LINK_LIBRARIES(cppliang gtest pthread)
