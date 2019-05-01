@@ -4,6 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/code/inc",
+                "${workspaceFolder}/ft/inc",
                 "C:\\Program Files (x86)\\CodeBlocks\\MinGW\\lib\\gcc\\mingw32\\5.1.0\\include\\c++"
             ],
             "defines": [
