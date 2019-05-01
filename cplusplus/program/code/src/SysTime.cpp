@@ -33,7 +33,7 @@ void SysTime::record()
 
     timeval msecStamp;
     gettimeofday(&msecStamp, nullptr);
-    msecond = msecStamp.tv_sec / 1000 % 1000;
+    msecond = msecStamp.tv_usec / 1000 % 1000;
     usecond = msecStamp.tv_usec % 1000;
 }
 
