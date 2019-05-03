@@ -1,7 +1,8 @@
 #ifndef CODE_INC_SYSTIME_H_
 #define CODE_INC_SYSTIME_H_
 
-#include <nsport.h>
+#include "nsport.h"
+#include "singleton.h"
 
 NS_LIANG_BEG
 
@@ -26,6 +27,8 @@ private:
     int msecond{0};
     int usecond{0};
 };
+
+using SysTimeIf = Singleton<SysTime>;
 
 NS_LIANG_END
 

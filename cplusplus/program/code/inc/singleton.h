@@ -7,18 +7,28 @@
 
 NS_LIANG_BEG
 
+template<typename T>
 class Singleton
 {
 public:
-	static Singleton* getInstance();
+	static T* getInstance();
 
 private:
-	Singleton();
+	Singleton() = delete;
 
 	NOT_ALLOW_COPY(Singleton);
 
-	static Singleton* instance;
+	static T* instance;
 };
+
+template<typename T>
+T* Singleton<T>::instance = new T();
+
+template<typename T>
+T* Singleton<T>::getInstance()
+{
+	return instance;
+}
 
 NS_LIANG_END
 
