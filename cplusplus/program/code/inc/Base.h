@@ -1,7 +1,7 @@
 #ifndef CODE_INC_BASE_H_
 #define CODE_INC_BASE_H_
 
-#include <nsport.h>
+#include "nsport.h"
 
 NS_LIANG_BEG
 
