@@ -3,7 +3,7 @@
 #ifndef CODE_INC_SINGLETON_H_
 #define CODE_INC_SINGLETON_H_
 
-#include <nsport.h>
+#include "nsport.h"
 
 NS_LIANG_BEG
 
@@ -32,6 +32,4 @@ T* Singleton<T>::getInstance()
 
 NS_LIANG_END
 
-
-
-#endif /* CODE_INC_SINGLETON_H_ */
+#endif 

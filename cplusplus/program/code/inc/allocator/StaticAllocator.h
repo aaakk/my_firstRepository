@@ -1,14 +1,10 @@
-/*
- * StaticAllocator.h
- *
- *  Created on: 2019年4月20日
- *      Author: liangyj
- */
+//静态分配器
 
 #ifndef CODE_INC_STATICALLOCATOR_H_
 #define CODE_INC_STATICALLOCATOR_H_
-#include <string.h>
-#include <StaticAllocator.h>
+
+#include <string>
+#include "StaticAllocator.h"
 
 template<typename T, int N>
 class StaticAllocator
@@ -31,6 +27,11 @@ class StaticAllocator
     {
         T* p = tryAlloc()?doAlloc():nullptr;
         return p;
+    }
+
+    int getFreeNum()
+    {
+        return freeCnt;
     }
 
 private:
@@ -81,6 +82,4 @@ private:
     int freeCnt;
 };
 
-
-
-#endif /* CODE_INC_STATICALLOCATOR_H_ */
+#endif 

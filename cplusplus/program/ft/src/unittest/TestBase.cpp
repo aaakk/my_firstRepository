@@ -1,7 +1,7 @@
-#include "gtest/gtest.h"
-#include "ftport.h"
-#include "Base.h"
 #include <iostream>
+#include "Base.h"
+#include "ftport.h"
+#include "gtest/gtest.h"
 
 namespace
 {
@@ -23,7 +23,7 @@ TEST_F(testBase, test_base)
 
     if(!IsBaseType<float>::isBaseType())
     {
-        std::cout << "Is baseType" << std::endl;
+        std::cout << "Is not baseType" << std::endl;
     }
 }
 

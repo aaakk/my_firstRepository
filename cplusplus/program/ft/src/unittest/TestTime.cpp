@@ -1,6 +1,7 @@
+#include <unistd.h>
+#include "gtest/gtest.h"
 #include "ftport.h"
 #include "SysTime.h"
-#include "gtest/gtest.h"
 
 namespace
 {
@@ -14,9 +15,9 @@ FT_LIANG_BEG
 
 TEST_F(TestTime, test_time)
 {
-
     NS_LIANG(SysTimeIf)::getInstance()->printCurrentTime();
-
+    sleep(5);
+    NS_LIANG(SysTimeIf)::getInstance()->printCurrentTime();
 };
 
 

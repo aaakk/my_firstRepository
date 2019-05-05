@@ -1,6 +1,6 @@
-#include "TestArray.h"
-#include "gtest/gtest.h"
 #include <iostream>
+#include "gtest/gtest.h"
+#include "TestArray.h"
 
 namespace
 {
@@ -10,14 +10,6 @@ namespace
 }
 
 FT_LIANG_BEG
-
-TestArray::TestArray()
-{
-}
-
-TestArray::~TestArray()
-{
-}
 
 void NullPointerA::Func1()
 {

@@ -15,8 +15,8 @@ FT_LIANG_BEG
 class TestArray
 {
 public:
-    TestArray();
-    virtual ~TestArray();
+    TestArray(){};
+    virtual ~TestArray(){};
 
     unsigned char a[5] = {0xff, 0, 0x7f};
 
