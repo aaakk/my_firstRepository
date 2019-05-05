@@ -16,6 +16,7 @@ INCLUDE_DIRECTORIES(
     "${code_dir}/inc"
     "${ft_dir}/inc"
     "${3rd_dir}/gtest/inc"
+    "${3rd_dir}/gtest"
 )
 
 #源文件路径
@@ -26,10 +27,9 @@ FILE(GLOB SRC_LIST
 )
 
 #构建静态库libgtest.a
-SET(source      ${3rd_dir}/gtest/src/gtest-all.cc)
-SET(headers     ${3rd_dir}/gtest/)
+FILE(GLOB  source      "${3rd_dir}/gtest/src/*.cc")
 
-ADD_LIBRARY(gtest ${source} ${headers})
+ADD_LIBRARY(gtest ${source})
 
 SET_TARGET_PROPERTIES(gtest PROPERTIES LINKER_LANGUAGE CXX)
 
