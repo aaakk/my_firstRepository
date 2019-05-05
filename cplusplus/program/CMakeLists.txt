@@ -15,7 +15,7 @@ PROJECT(cppliang)
 INCLUDE_DIRECTORIES(
     "${code_dir}/inc"
     "${ft_dir}/inc"
-    "${3rd_dir}/inc"
+    "${3rd_dir}/gtest/inc"
 )
 
 #源文件路径
@@ -26,12 +26,12 @@ FILE(GLOB SRC_LIST
 )
 
 #构建静态库libgtest.a
-SET(source      ${3rd_dir}/inc/gtest/)
-SET(headers     ${3rd_dir}/src/gtest/)
+SET(source      ${3rd_dir}/gtest/src/gtest-all.cc)
+SET(headers     ${3rd_dir}/gtest/)
 
 ADD_LIBRARY(gtest ${source} ${headers})
 
-SET_TARGET_PROPERTIES(gtest PROPERTIES LINKER_LANGUAGE C)
+SET_TARGET_PROPERTIES(gtest PROPERTIES LINKER_LANGUAGE CXX)
 
 #6.生成可执行文件
 ADD_EXECUTABLE(cppliang ${SRC_LIST})
