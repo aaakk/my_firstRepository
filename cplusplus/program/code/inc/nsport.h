@@ -1,10 +1,3 @@
-/*
- * port.h
- *
- *  Created on: 2019��2��28��
- *      Author: liangyj
- */
-
 #ifndef CODE_INC_NSPORT_H_
 #define CODE_INC_NSPORT_H_
 
@@ -22,4 +15,4 @@
 	ClassName(const ClassName&) = delete;  \
 	ClassName & operator =(const ClassName &) = delete
 
-#endif /* CODE_INC_NSPORT_H_ */
+#endif 

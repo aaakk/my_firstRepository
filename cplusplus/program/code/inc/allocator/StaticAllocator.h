@@ -4,6 +4,7 @@
 #define CODE_INC_STATICALLOCATOR_H_
 
 #include <string>
+
 #include "StaticAllocator.h"
 
 template<typename T, int N>

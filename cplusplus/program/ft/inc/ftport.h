@@ -1,10 +1,3 @@
-/*
- * port.h
- *
- *  Created on: 2019��2��28��
- *      Author: liangyj
- */
-
 #ifndef FT_INC_FTPORT_H_
 #define FT_INC_FTPORT_H_
 
@@ -17,4 +10,4 @@
 
 #define ENTER_LINE printf("\n");
 
-#endif /* FT_INC_FTPORT_H_ */
+#endif 

@@ -1,10 +1,3 @@
-/*
- * role.h
- *
- *  Created on: 2018��10��24��
- *      Author: liangyj
- */
-
 #ifndef INCLUDE_ROLE_H_
 #define INCLUDE_ROLE_H_
 
@@ -24,4 +17,4 @@ struct Role
 
 NS_LIANG_END
 
-#endif /* INCLUDE_ROLE_H_ */
+#endif 

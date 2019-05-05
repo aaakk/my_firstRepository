@@ -1,10 +1,3 @@
-/*
- * ElemRepo.h
- *
- *  Created on: 2019年4月24日
- *      Author: liangyj
- */
-
 #ifndef CODE_INC_VISITOR_ELEMREPO_H_
 #define CODE_INC_VISITOR_ELEMREPO_H_
 
@@ -26,4 +19,4 @@ private:
     dataList elemList;
 };
 
-#endif /* CODE_INC_VISITOR_ELEMREPO_H_ */
+#endif 

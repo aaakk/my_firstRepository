@@ -1,10 +1,3 @@
-/*
- * SysTime.cpp
- *
- *  Created on: 2019年3月13日
- *      Author: liangyj
- */
-
 #include <sys/time.h>
 #include <iostream>
 #include <iomanip>
