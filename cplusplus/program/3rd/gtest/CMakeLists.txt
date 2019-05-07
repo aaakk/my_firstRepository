@@ -7,7 +7,7 @@ SET(lib_dir         ${current_dir}/../../lib)
 
 INCLUDE_DIRECTORIES(
     "${inc_dir}"
-    "${src_dir}"
+    "${src_dir}/../"
 )
 
 FILE(GLOB  source      "${src_dir}/*.cc")
