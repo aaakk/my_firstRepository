@@ -4,6 +4,5 @@ INCLUDE_DIRECTORIES(
     "${code_dir}/inc"
     "${ft_dir}/inc"
     "${3rd_dir}/gtest/inc"
-    "${3rd_dir}/gtest"
     "${3rd_dir}"
 )
