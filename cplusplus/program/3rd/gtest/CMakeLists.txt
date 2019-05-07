@@ -6,8 +6,8 @@ SET(src_dir         ${current_dir}/src)
 SET(lib_dir         ${current_dir}/../../lib)
 
 INCLUDE_DIRECTORIES(
-    "${3rd_dir}/gtest/inc"
-    "${3rd_dir}/gtest"
+    "${inc_dir}"
+    "${src_dir}"
 )
 
 FILE(GLOB  source      "${src_dir}/*.cc")
