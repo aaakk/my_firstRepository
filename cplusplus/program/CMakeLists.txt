@@ -12,11 +12,8 @@ SET(3rd_dir      ${current_dir}/3rd)
 PROJECT(cppliang)
 
 #头文件路径
-INCLUDE_DIRECTORIES(
-    "${code_dir}/inc"
-    "${ft_dir}/inc"
-    "${3rd_dir}/gtest/inc"
-    "${3rd_dir}/gtest"
+INCLUDE(
+    "${current_dir}/include.cmake"
 )
 
 #源文件路径
