@@ -10,11 +10,11 @@ INCLUDE_DIRECTORIES(
     "${src_dir}/../"
 )
 
-FILE(GLOB  source      "${src_dir}/*.cc")
+SET(source      "${src_dir}/*.cc")
+
+SET_TARGET_PROPERTIES(gtest PROPERTIES  LINKER_LANGUAGE CXX)
 
 ADD_LIBRARY(gtest ${source})
 
-SET_TARGET_PROPERTIES(gtest PROPERTIES  LINKER_LANGUAGE             CXX 
-                                        LIBRARY_OUTPUT_DIRECTORY    ${lib_dir})
 
 
