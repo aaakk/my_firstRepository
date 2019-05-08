@@ -7,6 +7,10 @@ else
     mkdir build
 fi
 
+if [ ! -d lib ];then
+    mkdir lib
+fi
+
 cd build
 
 cmake -DCMAKE_BUILD_TYPE=Debug ..

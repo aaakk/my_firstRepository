@@ -27,9 +27,6 @@ FILE(GLOB SRC_LIST
     "${ft_dir}/src/unittest/*.cpp"
 )
 
-#设置库输出目录
-SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${lib_dir})
-
 #生成库文件
 add_subdirectory(${3rd_dir}/gtest)
 
