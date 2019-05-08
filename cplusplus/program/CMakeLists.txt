@@ -12,9 +12,12 @@ SET(3rd_dir         ${current_dir}/3rd)
 #项目名称
 PROJECT(cppliang)
 
-#头文件路径
+#包含其他cmake文件路径
 INCLUDE(
-    "${current_dir}/include.cmake"
+    #头文件
+    "${current_dir}/include.cmake" 
+    #编译选项
+    "${current_dir}/compiler.cmake"
 )
 
 #源文件路径
@@ -27,8 +30,8 @@ FILE(GLOB SRC_LIST
 #链接库路径
 LINK_DIRECTORIES(lib_dir)
 
-#6.生成可执行文件
+#生成可执行文件
 ADD_EXECUTABLE(cppliang ${SRC_LIST})
 
-#7.链接库文件
+#链接库文件
 TARGET_LINK_LIBRARIES(cppliang gtest pthread)
