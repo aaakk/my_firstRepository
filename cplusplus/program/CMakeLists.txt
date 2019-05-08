@@ -27,6 +27,8 @@ FILE(GLOB SRC_LIST
     "${ft_dir}/src/unittest/*.cpp"
 )
 
+add_subdirectory(${3rd_dir}/gtest)
+
 #链接库路径
 LINK_DIRECTORIES(lib_dir)
 
