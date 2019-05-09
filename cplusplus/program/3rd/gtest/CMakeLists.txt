@@ -11,8 +11,11 @@ INCLUDE_DIRECTORIES(
 
 FILE(GLOB source      "${src_dir}/*.cc")
 
+#静态库输出路径
 SET(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${current_dir}/../../lib)
 
+#生成库
 ADD_LIBRARY(gtest ${source})
 
+#链接语言
 SET_TARGET_PROPERTIES(gtest PROPERTIES  LINKER_LANGUAGE CXX)

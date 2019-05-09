@@ -17,8 +17,16 @@ public:
 class NullPointerA
 {
 public:
-    void Func1();
-    void Func2();
+    int Func1();
+    {
+        return 1 ;
+    }
+
+    std::string Func2();
+    {
+        return std::string("Run Func2");
+    }
+
     int a{10};
 };
 
