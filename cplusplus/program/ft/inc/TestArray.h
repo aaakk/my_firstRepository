@@ -1,7 +1,7 @@
 #ifndef FT_INC_TESTARRAY_H_
 #define FT_INC_TESTARRAY_H_
 
-#include <ftport.h>
+#include "ftport.h"
 
 FT_LIANG_BEG
 
@@ -17,12 +17,12 @@ public:
 class NullPointerA
 {
 public:
-    int Func1();
+    int Func1()
     {
         return 1 ;
     }
 
-    std::string Func2();
+    std::string Func2()
     {
         return std::string("Run Func2");
     }

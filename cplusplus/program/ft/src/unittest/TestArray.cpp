@@ -16,9 +16,11 @@ namespace
          else return 0;  
       }
    private:
-      elemArray[3] = {0xff, 0, 0x7f};
+      int elemArray[3] = {0xff, 0, 0x7f};
    };
 }
+
+FT_LIANG_BEG
 
 TEST_F(testArray, test_array)
 {
