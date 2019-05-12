@@ -29,10 +29,15 @@ FILE(GLOB SRC_LIST
 )
 
 #生成库文件
+FIND_LIBRARY(lianglib NAMES gtest PATHS ${lib_dir})
+IF(lianglib)
+MESSAGE("libgtest exist")
+ELSE(NOT lianglib)
 add_subdirectory(${3rd_dir}/gtest)
+ENDIF(lianglib)
 
 #链接库路径
-LINK_DIRECTORIES(lib_dir)
+LINK_DIRECTORIES(${lib_dir})
 
 #生成可执行文件
 ADD_EXECUTABLE(cppliang ${SRC_LIST})
