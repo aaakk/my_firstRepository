@@ -1,9 +1,7 @@
 #include "ftport.h"
-#inlcude "visitor/ElemRepo.h"
+#include "visitor/ElemRepo.h"
 #include "visitor/ElemVisitor.h"
 #include "gtest/gtest.h"
-
-using namespace std;
 
 namespace
 {
@@ -14,22 +12,22 @@ namespace
     public:
         void visit(dataElem& elem)
         {
-            cout << elem << endl;
+	    std::cout << elem << std::endl;
         }
-    }
+    };
 
-    list<string> testData = 
+    std::list<std::string> testData = 
     {
         {"testElem1"},
         {"testElem2"}
-    }
-}
+    };
+};
 
 namespace
 {
     class TestVisitor : public testing::Test
     {
-    }
+    };
 }
 
 FT_LIANG_BEG
