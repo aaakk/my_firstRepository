@@ -6,11 +6,10 @@
 
 NS_LIANG_BEG
 
-class SysTime
+SINGLETON(SysTime)
 {
 public:
-    SysTime();
-    virtual ~SysTime();
+    initSysTime();
 
     void reset();
     void record();
@@ -27,8 +26,6 @@ private:
     int msecond{0};
     int usecond{0};
 };
-
-using SysTimeIf = Singleton<SysTime>;
 
 NS_LIANG_END
 

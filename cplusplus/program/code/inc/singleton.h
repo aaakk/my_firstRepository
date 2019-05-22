@@ -30,6 +30,8 @@ T* Singleton<T>::getInstance()
 	return instance;
 }
 
+#define SINGLETON(type) class type : Singleton<type>
+
 NS_LIANG_END
 
 #endif 

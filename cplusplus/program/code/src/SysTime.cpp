@@ -5,12 +5,9 @@
 
 NS_LIANG_BEG
 
-SysTime::SysTime() : year(0), month(0), day(0), hour(0), minute(0), second(0)
+void SysTime::initSysTime()
 {
-}
-
-SysTime::~SysTime()
-{
+    reset();
 }
 
 void SysTime::record()

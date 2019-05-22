@@ -15,9 +15,9 @@ FT_LIANG_BEG
 
 TEST_F(TestTime, test_time)
 {
-    NS_LIANG(SysTimeIf)::getInstance()->printCurrentTime();
+    NS_LIANG(SysTime)::getInstance()->printCurrentTime();
     sleep(5);
-    NS_LIANG(SysTimeIf)::getInstance()->printCurrentTime();
+    NS_LIANG(SysTime)::getInstance()->printCurrentTime();
 };
 
 
