@@ -13,17 +13,19 @@ class Printer<T, Args...>
 public:
     void doPrint()
     {
-        T::doPrint();
-        Printer<Args...>::doPrint();
+        T t;
+	t.doPrint();
+        Printer<Args...> arg;
+	arg.doPrint();
     } 
-}
+};
 
 template<>
-class Print<>
+class Printer<>
 {
 public:
     void doPrint(){}
-}
+};
 
 NS_LIANG_END
 

@@ -14,15 +14,18 @@ namespace
 {
 #define PRODUCEPRINTER(par)     class Printer##par \
     {\
+    public:\
         void doPrint()\
         {\
             std::cout << "print #par" << std::endl;\
         }\
-    };\
+    };
 }
 
-TEST_T(TestPrinter, test_printer)
+TEST_F(TestPrinter, test_printer)
 {
+    USING_NS_LIANG;
+
     PRODUCEPRINTER(A);
     PRODUCEPRINTER(B);
     PRODUCEPRINTER(C);
