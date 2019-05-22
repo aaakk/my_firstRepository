@@ -13,9 +13,8 @@ class Singleton
 public:
 	static T* getInstance();
 
+	Singleton(){}
 private:
-	Singleton() = delete;
-
 	NOT_ALLOW_COPY(Singleton);
 
 	static T* instance;
@@ -30,7 +29,7 @@ T* Singleton<T>::getInstance()
 	return instance;
 }
 
-#define SINGLETON(type) class type : Singleton<type>
+#define SINGLETON(type) class type : public Singleton<type>
 
 NS_LIANG_END
 

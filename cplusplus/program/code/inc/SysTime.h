@@ -9,7 +9,7 @@ NS_LIANG_BEG
 SINGLETON(SysTime)
 {
 public:
-    initSysTime();
+    void initSysTime();
 
     void reset();
     void record();
