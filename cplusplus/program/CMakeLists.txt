@@ -23,7 +23,8 @@ INCLUDE(
 #源文件路径
 FILE(GLOB SRC_LIST
     "${code_dir}/src/*.cpp"
-    "${code_dir}/src/visitor/*.cpp" 
+    "${code_dir}/src/visitor/*.cpp"
+    "${code_dir}/src/systime/*.cpp" 
     "${ft_dir}/src/*.cpp"
     "${ft_dir}/src/unittest/*.cpp"
 )

@@ -1,5 +1,6 @@
 #pragma once
 
+#include "nsport.h"
 #include "systime/TimeReader.h"
 #include "systime/TimeRecorder.h"
 #include "systime/TimeRepo.h"

@@ -2,6 +2,7 @@
 #include "gtest/gtest.h"
 #include "ftport.h"
 #include "systime/TimeInfo.h"
+#include "systime/TimeReader.h"
 
 namespace
 {
