@@ -23,6 +23,6 @@ struct TimeRepo
         second  = 0;
         msecond = 0;
     }
-}
+};
 
 NS_LIANG_END

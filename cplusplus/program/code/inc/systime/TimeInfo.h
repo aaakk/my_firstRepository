@@ -11,7 +11,7 @@ DEFINE_ROLE(TimeInfo)
 {
     USE_ROLE(TimeReader);
     USE_ROLE(TimeRecorder);
-}
+};
 
 TimeInfo& getTimer();
 
