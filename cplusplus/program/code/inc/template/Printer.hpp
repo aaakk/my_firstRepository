@@ -13,11 +13,12 @@ class Printer<T, Args...>
 public:
     void doPrint()
     {
-        T t;
-	t.doPrint();
+	    t.doPrint();
         Printer<Args...> arg;
-	arg.doPrint();
+	    arg.doPrint();
     } 
+private:
+    T t;
 };
 
 template<>

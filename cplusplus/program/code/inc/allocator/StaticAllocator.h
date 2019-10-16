@@ -39,7 +39,7 @@ private:
 
     bool tryAlloc()
     {
-        return (!freeHead)?true:false;
+        return freeHead;
     }
 
    void freeElem(Element& elem)
