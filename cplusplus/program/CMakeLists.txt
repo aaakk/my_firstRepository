@@ -12,6 +12,8 @@ SET(3rd_dir         ${current_dir}/3rd)
 #项目名称
 PROJECT(cppliang)
 
+add_compile_options(-std=c++11)
+
 #包含其他cmake文件路径
 INCLUDE(
     #头文件

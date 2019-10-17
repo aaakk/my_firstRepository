@@ -1,4 +1,6 @@
 /Debug/
 /.vscode
 /build/
-/lib/
+/lib
+/ccache_dir
+/ccache_log

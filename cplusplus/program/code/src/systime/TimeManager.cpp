@@ -15,7 +15,7 @@ void TimeManager::readTime()
     std::cout << timeRepo.year << "-" << std::setfill('0') << std::setw(2) << timeRepo.month \
     << "-" << std::setw(2) << timeRepo.day <<" " << std::setw(2) << timeRepo.hour << ":" << 
     std::setw(2) << timeRepo.minute << ":" << std::setw(2) << timeRepo.second << ":" << \
-    std::setw(3) << timeRepo.msecond << std::setw(3) << timeRepo.usecond << std::endl;
+    std::setw(3) << timeRepo.msecond << std::setw(3) << timeRepo.usecond << "!" << std::endl;
 }
 
 void TimeManager::recordTime()

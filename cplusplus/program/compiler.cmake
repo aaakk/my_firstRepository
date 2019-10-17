@@ -8,6 +8,7 @@ SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS} -O3 -Wall")
 
 find_program(CCACHE_PROGRAM ccache)
 if(CCACHE_PROGRAM)
+    MESSAGE("find cmake")
     set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE ccache)
     set_property(GLOBAL PROPERTY RULE_LAUNCH_LINK ccache)
 endif()
