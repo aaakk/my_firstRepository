@@ -17,16 +17,13 @@ public:
 private:
 	NOT_ALLOW_COPY(Singleton);
 
-	static T* instance;
+	static T instance;
 };
-
-template<typename T>
-T* Singleton<T>::instance = new T();
 
 template<typename T>
 T* Singleton<T>::getInstance()
 {
-	return instance;
+	return &instance;
 }
 
 #define SINGLETON(type) class type : public Singleton<type>
