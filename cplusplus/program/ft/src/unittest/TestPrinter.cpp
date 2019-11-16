@@ -2,6 +2,8 @@
 #include "gtest/gtest.h"
 #include "template/Printer.hpp"
 #include <iostream>
+#include "template/asn/asn-struct.h"
+#include "template/asn/structMsg.h"
 
 namespace
 {
@@ -31,4 +33,9 @@ TEST_F(TestPrinter, test_printer)
     PRODUCEPRINTER(C);
     Printer<PrinterA, PrinterB, PrinterC> printer;
     printer.doPrint();
+}
+
+TEST_F(TestPrinter, test_printer)
+{
+    structList* ptr = __ALLOCMSG(structList, structElem, 2);
 }
