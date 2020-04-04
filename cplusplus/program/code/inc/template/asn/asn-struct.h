@@ -3,11 +3,11 @@
 struct structElem
 {
     unsigned int element;
-}
+};
 
 struct structList
 {
     unsigned int nocts;
-    structElem* elem;
-}
+    structElem* elem[800];
+};
 

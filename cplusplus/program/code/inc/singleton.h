@@ -21,6 +21,9 @@ private:
 };
 
 template<typename T>
+T Singleton<T>::instance;
+
+template<typename T>
 T* Singleton<T>::getInstance()
 {
 	return &instance;

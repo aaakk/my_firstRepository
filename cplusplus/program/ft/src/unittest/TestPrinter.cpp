@@ -4,6 +4,8 @@
 #include <iostream>
 #include "template/asn/asn-struct.h"
 #include "template/asn/structMsg.h"
+#include "systime/TimeInfo.h"
+#include "systime/TimeReader.h"
 
 namespace
 {
@@ -35,7 +37,12 @@ TEST_F(TestPrinter, test_printer)
     printer.doPrint();
 }
 
-TEST_F(TestPrinter, test_printer)
+TEST_F(TestPrinter, test_printer_2)
 {
-    structList* ptr = __ALLOCMSG(structList, structElem, 2);
+    structList* ptr = nullptr;
+
+    NS_LIANG(TIMER).ROLE(TimeReader).readCurTime();
+    __ALLOCMSG(structList, structElem, 800, ptr);
+    NS_LIANG(TIMER).ROLE(TimeReader).readCurTime();
+
 }
