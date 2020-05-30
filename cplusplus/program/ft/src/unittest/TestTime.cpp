@@ -21,5 +21,4 @@ TEST_F(TestTime, test_time)
     NS_LIANG(TIMER).ROLE(TimeReader).readCurTime();
 };
 
-
 FT_LIANG_END

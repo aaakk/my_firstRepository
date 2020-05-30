@@ -11,19 +11,19 @@ struct structList
     structElem* elem[800];
 };
 
-using unsigned int = PageNum;
+using PageNum = unsigned int;
 
 struct BookName
 {
     unsigned int n;
     char bookName[20];
-}
+};
 
 struct Book
 {
     BookName name;
     PageNum pages; 
-}
+};
 
 struct BookList
 {
@@ -34,10 +34,11 @@ struct BookList
 template<typename AsnList>
 struct WrappedAsnList
 {
-    typedef decltype(AsnList.elem[0]) Elem;
-    typedef decltype(AsnList.n)       Num;
-
     AsnList& list;
+
+    typedef decltype(AsnList::elem[0]) Elem;
+    typedef decltype(AsnList::list.n)       Num;
+
 
     WrappedAsnList(const AsnList& list) : list(list){}
 
@@ -75,6 +76,6 @@ struct WrappedAsnList
         }
 
         Elem* elemPtr;
-    }
-}
+    };
+};
 
