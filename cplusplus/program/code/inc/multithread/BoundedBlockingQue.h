@@ -1,12 +1,14 @@
+#pragma once
+
 #include <mutex>
 #include <condition_variable>
 #include <deque>
 
 template<typename T>
-struct BoundedBlockingQue
+class BoundedBlockingQue
 {
 public:
-    BoundedBlockingQue(int maxSize = 100):maxSize(maxSize){}
+    BoundedBlockingQue(int maxSize = 5):maxSize(maxSize){}
 
     bool size()
     {
