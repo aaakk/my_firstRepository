@@ -27,4 +27,12 @@ TEST_F(testBase, test_base)
     }
 }
 
+TEST_F(testBase, DISABLED_test_core_dump)
+{
+    USING_NS_LIANG;
+
+    U8* ptr = nullptr;
+    *ptr = 1;
+}
+
 FT_LIANG_END

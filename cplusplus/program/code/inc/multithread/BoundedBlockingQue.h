@@ -13,7 +13,7 @@ public:
     bool size()
     {
         std::unique_lock<std::mutex> lk(mut);
-        que.size();
+        return que.size();
     }
 
     bool isFull()
